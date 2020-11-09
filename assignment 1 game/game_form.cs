@@ -56,5 +56,10 @@ namespace assignment_1_game
             btn_shoot.Enabled = false;//disabling the shoot button//
             btn_shootaway.Enabled = false;//disabling the shootaway button//
         }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
