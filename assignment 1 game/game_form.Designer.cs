@@ -42,7 +42,7 @@
             // 
             this.btn_load.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_load.ForeColor = System.Drawing.Color.Black;
-            this.btn_load.Location = new System.Drawing.Point(48, 426);
+            this.btn_load.Location = new System.Drawing.Point(12, 440);
             this.btn_load.Name = "btn_load";
             this.btn_load.Size = new System.Drawing.Size(124, 57);
             this.btn_load.TabIndex = 0;
@@ -53,7 +53,7 @@
             // btn_spin
             // 
             this.btn_spin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_spin.Location = new System.Drawing.Point(48, 501);
+            this.btn_spin.Location = new System.Drawing.Point(12, 514);
             this.btn_spin.Name = "btn_spin";
             this.btn_spin.Size = new System.Drawing.Size(124, 57);
             this.btn_spin.TabIndex = 1;
