@@ -21,5 +21,15 @@ namespace assignment_1_game
         {
 
         }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void lbl_rule1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

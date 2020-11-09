@@ -34,6 +34,7 @@
             this.lbl_rule3 = new System.Windows.Forms.Label();
             this.lbl_rule4 = new System.Windows.Forms.Label();
             this.btn_back = new System.Windows.Forms.Button();
+            this.lbl_rule5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbl_rules
@@ -51,7 +52,7 @@
             // 
             this.lbl_rule2.AutoSize = true;
             this.lbl_rule2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_rule2.Location = new System.Drawing.Point(70, 133);
+            this.lbl_rule2.Location = new System.Drawing.Point(68, 151);
             this.lbl_rule2.Name = "lbl_rule2";
             this.lbl_rule2.Size = new System.Drawing.Size(376, 29);
             this.lbl_rule2.TabIndex = 1;
@@ -61,17 +62,18 @@
             // 
             this.lbl_rule1.AutoSize = true;
             this.lbl_rule1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_rule1.Location = new System.Drawing.Point(70, 101);
+            this.lbl_rule1.Location = new System.Drawing.Point(70, 113);
             this.lbl_rule1.Name = "lbl_rule1";
             this.lbl_rule1.Size = new System.Drawing.Size(243, 29);
             this.lbl_rule1.TabIndex = 2;
             this.lbl_rule1.Text = "# There are six steps ";
+            this.lbl_rule1.Click += new System.EventHandler(this.lbl_rule1_Click);
             // 
             // lbl_rule3
             // 
             this.lbl_rule3.AutoSize = true;
             this.lbl_rule3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_rule3.Location = new System.Drawing.Point(70, 168);
+            this.lbl_rule3.Location = new System.Drawing.Point(68, 190);
             this.lbl_rule3.Name = "lbl_rule3";
             this.lbl_rule3.Size = new System.Drawing.Size(366, 29);
             this.lbl_rule3.TabIndex = 3;
@@ -81,7 +83,7 @@
             // 
             this.lbl_rule4.AutoSize = true;
             this.lbl_rule4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_rule4.Location = new System.Drawing.Point(73, 200);
+            this.lbl_rule4.Location = new System.Drawing.Point(68, 231);
             this.lbl_rule4.Name = "lbl_rule4";
             this.lbl_rule4.Size = new System.Drawing.Size(512, 29);
             this.lbl_rule4.TabIndex = 4;
@@ -96,12 +98,24 @@
             this.btn_back.TabIndex = 5;
             this.btn_back.Text = "Back";
             this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            // 
+            // lbl_rule5
+            // 
+            this.lbl_rule5.AutoSize = true;
+            this.lbl_rule5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_rule5.Location = new System.Drawing.Point(70, 274);
+            this.lbl_rule5.Name = "lbl_rule5";
+            this.lbl_rule5.Size = new System.Drawing.Size(378, 29);
+            this.lbl_rule5.TabIndex = 6;
+            this.lbl_rule5.Text = "#You have limited chance to shoot";
             // 
             // game_rules
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbl_rule5);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.lbl_rule4);
             this.Controls.Add(this.lbl_rule3);
@@ -122,5 +136,6 @@
         private System.Windows.Forms.Label lbl_rule3;
         private System.Windows.Forms.Label lbl_rule4;
         private System.Windows.Forms.Button btn_back;
+        private System.Windows.Forms.Label lbl_rule5;
     }
 }
