@@ -64,6 +64,9 @@ namespace assignment_1_game
 
         private void btn_rules_Click(object sender, EventArgs e)
         {
+            game_rules rules_obj = new game_rules ();
+            rules_obj.Show();
+            this.Hide();
 
         }
     }
