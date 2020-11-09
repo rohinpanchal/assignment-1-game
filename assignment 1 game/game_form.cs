@@ -61,5 +61,10 @@ namespace assignment_1_game
         {
             Application.Exit();
         }
+
+        private void btn_rules_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

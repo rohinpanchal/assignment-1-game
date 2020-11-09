@@ -35,6 +35,7 @@
             this.btn_shoot = new System.Windows.Forms.Button();
             this.btn_playagain = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
+            this.btn_rules = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pic_b)).BeginInit();
             this.SuspendLayout();
             // 
@@ -116,6 +117,17 @@
             this.btn_exit.UseVisualStyleBackColor = true;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
+            // btn_rules
+            // 
+            this.btn_rules.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_rules.Location = new System.Drawing.Point(738, 12);
+            this.btn_rules.Name = "btn_rules";
+            this.btn_rules.Size = new System.Drawing.Size(96, 50);
+            this.btn_rules.TabIndex = 7;
+            this.btn_rules.Text = "Rules";
+            this.btn_rules.UseVisualStyleBackColor = true;
+            this.btn_rules.Click += new System.EventHandler(this.btn_rules_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -124,6 +136,7 @@
             this.BackgroundImage = global::assignment_1_game.Properties.Resources.OIP__1_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(846, 583);
+            this.Controls.Add(this.btn_rules);
             this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.btn_playagain);
             this.Controls.Add(this.btn_shoot);
@@ -148,6 +161,7 @@
         private System.Windows.Forms.Button btn_shoot;
         private System.Windows.Forms.Button btn_playagain;
         private System.Windows.Forms.Button btn_exit;
+        private System.Windows.Forms.Button btn_rules;
     }
 }
 
