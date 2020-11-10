@@ -67,6 +67,7 @@
             this.pic_b.BackgroundImage = global::assignment_1_game.Properties.Resources.gun_mgn_shooting_33767592_ver1_0_1;
             this.pic_b.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pic_b.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pic_b.ErrorImage = null;
             this.pic_b.Location = new System.Drawing.Point(12, 39);
             this.pic_b.Name = "pic_b";
             this.pic_b.Size = new System.Drawing.Size(311, 364);

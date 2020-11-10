@@ -43,7 +43,7 @@
             this.lbl_rules.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_rules.Location = new System.Drawing.Point(232, 26);
             this.lbl_rules.Name = "lbl_rules";
-            this.lbl_rules.Size = new System.Drawing.Size(321, 39);
+            this.lbl_rules.Size = new System.Drawing.Size(310, 38);
             this.lbl_rules.TabIndex = 0;
             this.lbl_rules.Text = "Rules for the game";
             this.lbl_rules.Click += new System.EventHandler(this.label1_Click);
@@ -92,9 +92,9 @@
             // btn_back
             // 
             this.btn_back.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_back.Location = new System.Drawing.Point(705, 384);
+            this.btn_back.Location = new System.Drawing.Point(548, 385);
             this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(75, 42);
+            this.btn_back.Size = new System.Drawing.Size(126, 42);
             this.btn_back.TabIndex = 5;
             this.btn_back.Text = "Back";
             this.btn_back.UseVisualStyleBackColor = true;

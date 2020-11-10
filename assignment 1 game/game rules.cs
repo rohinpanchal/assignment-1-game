@@ -24,14 +24,14 @@ namespace assignment_1_game
 
         private void btn_back_Click(object sender, EventArgs e)
         {
-            
+            Form1 game_obj = new Form1();
+            game_obj.Show();
+            this.Close();
         }
 
         private void lbl_rule1_Click(object sender, EventArgs e)
         {
-            Form1 game_obj = new Form1();
-            game_obj.Show();
-            this.Close();
+            
         }
     }
 }
