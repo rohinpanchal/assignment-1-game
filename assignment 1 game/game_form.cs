@@ -38,8 +38,12 @@ namespace assignment_1_game
             Stream mystream = myAssembly.GetManifestResourceStream("assignment_1_game.Resources.tenor.gif");
             Bitmap bmp_object = new Bitmap(mystream);
             pic_b.Image = bmp_object;
-            
+
+            //Sound code
+            System.Media.SoundPlayer Sound_Object = new System.Media.SoundPlayer(assignment_1_game.Properties.Resources.loading);
+            Sound_Object.Play();
         }
+
 
         private void btn_spin_Click(object sender, EventArgs e)
         {
@@ -70,6 +74,10 @@ namespace assignment_1_game
             Stream mystream = myAssembly.GetManifestResourceStream("assignment_1_game.Resources.shooting.gif");
             Bitmap bmp_object = new Bitmap(mystream);
             pic_b.Image = bmp_object;
+
+            //Sound code
+            System.Media.SoundPlayer Sound_Object = new System.Media.SoundPlayer(assignment_1_game.Properties.Resources.shooting1);
+            Sound_Object.Play();
         }
 
         private void btn_playagain_Click(object sender, EventArgs e)
@@ -83,7 +91,7 @@ namespace assignment_1_game
             //code to display image in picture box on button click
 
             Assembly myAssembly = Assembly.GetExecutingAssembly();
-            Stream mystream = myAssembly.GetManifestResourceStream("assignment_1_game.Resources.ml_pia_logo");
+            Stream mystream = myAssembly.GetManifestResourceStream("assignment_1_game.Resources.ml_pia_logo.png");
             Bitmap bmp_object = new Bitmap(mystream);
             pic_b.Image = bmp_object;
         }

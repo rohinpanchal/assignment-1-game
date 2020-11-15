@@ -110,5 +110,11 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\ml_pia_logo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shooting.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
