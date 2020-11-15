@@ -58,6 +58,7 @@
     <Compile Include="game_form.Designer.cs">
       <DependentUpon>game_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="logic_.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="game rules.resx">
@@ -111,7 +112,7 @@
     <EmbeddedResource Include="Resources\ml_pia_logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\loading.wav" />
+    <EmbeddedResource Include="Resources\loading.wav" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\shooting.wav" />
