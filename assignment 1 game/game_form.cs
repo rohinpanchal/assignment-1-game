@@ -12,8 +12,10 @@ using System.Windows.Forms;
 
 namespace assignment_1_game
 {
+
     public partial class Form1 : Form
     {
+        logic_ game_object = new logic_();
         public Form1()
         {
             InitializeComponent();
@@ -58,9 +60,14 @@ namespace assignment_1_game
             Bitmap bmp_object = new Bitmap(mystream);
             pic_b.Image = bmp_object;
 
+            Random Rnd_obj = new Random();
+            game_object.spin_data = Rnd_obj.Next(1, 7);
 
-
+            MessageBox.Show("Bullet Position after spining the chamber is " + game_object.spin_data.ToString());
         }
+
+
+
 
         private void btn_shoot_Click(object sender, EventArgs e)
         {
@@ -78,6 +85,19 @@ namespace assignment_1_game
             //Sound code
             System.Media.SoundPlayer Sound_Object = new System.Media.SoundPlayer(assignment_1_game.Properties.Resources.shooting1);
             Sound_Object.Play();
+
+            {
+                //logic 
+                game_object.shoot_data = game_object.shoot_method();
+                if (game_object.shoot_data == 1)
+
+
+
+                
+                        {
+                            MessageBox.Show("emply shoot");
+                        }
+            }
         }
 
         private void btn_playagain_Click(object sender, EventArgs e)
@@ -100,8 +120,33 @@ namespace assignment_1_game
         {
             btn_shoot.Enabled = false;//disabling the shoot button//
             btn_shootaway.Enabled = false;//disabling the shootaway button//
-        }
 
+            //logic
+            if (game_object.chances <= 2)
+            {
+                game_object.shoot_data = game_object.shoot_method();
+                if (game_object.shoot_data == 1)
+                {
+
+                    MessageBox.Show("Wow!! you are safe. you win the game");
+                    btn_shoot.Enabled = false;
+                    btn_shootaway.Enabled = false;
+                }
+                else
+                {
+                    game_object.chances++;
+                    if (game_object.chances == 2)
+                    {
+                        MessageBox.Show("Your 2 chances are finished. you lose the game");
+                    }
+                    else
+                    {
+                        MessageBox.Show("emply shoot");
+                    }
+                }
+
+            }
+        }
         private void btn_exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
