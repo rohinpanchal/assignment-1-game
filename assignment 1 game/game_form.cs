@@ -60,6 +60,7 @@ namespace assignment_1_game
             Bitmap bmp_object = new Bitmap(mystream);
             pic_b.Image = bmp_object;
 
+            //logic
             Random Rnd_obj = new Random();
             game_object.spin_data = Rnd_obj.Next(1, 7);
 
@@ -90,7 +91,11 @@ namespace assignment_1_game
                 //logic 
                 game_object.shoot_data = game_object.shoot_method();
                 if (game_object.shoot_data == 1)
+                {
 
+                    MessageBox.Show("Bullet shot on your head. You are dead");
+                }
+                else
 
 
                 
