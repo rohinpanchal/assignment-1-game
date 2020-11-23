@@ -146,7 +146,6 @@
             this.Controls.Add(this.btn_spin);
             this.Controls.Add(this.btn_load);
             this.Name = "Form1";
-            this.Text = "assignment 1 game";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pic_b)).EndInit();
             this.ResumeLayout(false);
