@@ -136,7 +136,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BackgroundImage = global::assignment_1_game.Properties.Resources.OIP__1_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(846, 583);
+            this.ClientSize = new System.Drawing.Size(849, 583);
             this.Controls.Add(this.btn_rules);
             this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.btn_playagain);
@@ -146,6 +146,7 @@
             this.Controls.Add(this.btn_spin);
             this.Controls.Add(this.btn_load);
             this.Name = "Form1";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pic_b)).EndInit();
             this.ResumeLayout(false);

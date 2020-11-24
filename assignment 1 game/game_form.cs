@@ -44,6 +44,8 @@ namespace assignment_1_game
             //Sound code
             System.Media.SoundPlayer Sound_Object = new System.Media.SoundPlayer(assignment_1_game.Properties.Resources.loading);
             Sound_Object.Play();
+            //code for logic//
+            game_object.load_data = 1;
         }
 
 
@@ -60,7 +62,7 @@ namespace assignment_1_game
             Bitmap bmp_object = new Bitmap(mystream);
             pic_b.Image = bmp_object;
 
-            //logic
+            //code for logic//
             Random Rnd_obj = new Random();
             game_object.spin_data = Rnd_obj.Next(1, 7);
 
@@ -88,7 +90,7 @@ namespace assignment_1_game
             Sound_Object.Play();
 
             {
-                //logic 
+                //code for logic//
                 game_object.shoot_data = game_object.shoot_method();
                 if (game_object.shoot_data == 1)
                 {
@@ -126,7 +128,7 @@ namespace assignment_1_game
             btn_shoot.Enabled = false;//disabling the shoot button//
             btn_shootaway.Enabled = false;//disabling the shootaway button//
 
-            //logic
+            //code for logic//
             if (game_object.chances <= 2)
             {
                 game_object.shoot_data = game_object.shoot_method();
